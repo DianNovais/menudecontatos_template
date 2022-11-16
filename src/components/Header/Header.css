@@ -1,0 +1,337 @@
+header{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 8px 20px;
+    background-color: var(--main-color);
+    overflow: hidden;
+}
+
+header h2{
+    color: #fff;
+}
+
+.left_header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.container_contact{
+    display: flex;
+    flex-direction: row;
+    padding: 5px;
+    margin-left: 10px;
+    border-radius: 20px;
+    transition: all 0.4s;
+}
+.container_contact:hover {
+    background-color: #f5903e;
+}
+
+
+.container_contact i{
+    margin-left: 5px;
+}
+
+
+.logo_educa{
+    width: 90px;
+    height: auto;
+    cursor: pointer;
+}
+
+.right_header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.right_header span{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: #fff;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.iconTop{
+    font-size: 24px;
+    color: #fff;
+    cursor: pointer;
+    margin-right: 5px;
+    transition: all 0.5s;
+}
+
+.mod {
+    transform: translateY(-5px);
+}
+
+/* -------------- MODAL INFO --------------*/
+.hover_modal{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 17vw;
+    background-color: #fff;
+    width: 300px;
+    height: 270px;
+    border-radius: 20px;
+    box-shadow: 0 -3px 5px #b1b1b1bb;
+    justify-content: space-between;
+    transition: height 1s ,opacity 200ms;
+    z-index: 1;
+}
+.hover_modal_none{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 17vw;
+    background-color: #fff;
+    border-radius: 20px;
+    opacity: 0;
+    overflow: hidden;
+    height: 0;
+    width: 0;
+    transition: overflow 1s, height 1s, opacity 1s, width 5s;
+}
+.hover_modal::before{
+    content: "";
+
+	width: 0;
+	height: 0;
+
+	position: absolute;
+
+	border-left: 20px solid transparent;
+	border-right: 20px solid transparent;
+	border-bottom: 20px solid #fff;
+	
+	top: -20px;
+	right: 20%;
+}
+
+/* --------- MODAL CPF -------------*/
+.hover_cpf{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    background-color: #fff;
+    width: 300px;
+    height: 150px;
+    border-radius: 20px;
+    box-shadow: 0 -3px 5px #b1b1b1bb;
+    justify-content: space-between;
+    transition: height 1s ,opacity 200ms;
+    z-index: 1;
+}
+.hover_modal_cpf{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    background-color: #fff;
+    border-radius: 20px;
+    opacity: 0;
+    overflow: hidden;
+    height: 0;
+    width: 0;
+    transition: overflow 1s, height 1s, opacity 1s, width 5s;
+}
+.hover_cpf::before{
+    content: "";
+
+	width: 0;
+	height: 0;
+
+	position: absolute;
+
+	border-left: 20px solid transparent;
+	border-right: 20px solid transparent;
+	border-bottom: 20px solid #fff;
+	
+	top: -20px;
+	right: 35%;
+}
+.hover_cpf i, .hover_modal_cpf i {
+    font-size: 24px;
+    color: var(--main-color);
+}
+.hover_cpf form, .hover_modal_cpf form{
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+}
+.hover_cpf form > i:nth-child(1), .hover_modal_cpf form > i:nth-child(1){
+    padding-right: 5px;
+    border: 2px solid lightgray;
+    border-radius: 10px 0 0 10px;
+}
+.hover_cpf button > i:nth-child(1), .hover_modal_cpf button > i:nth-child(1){
+    padding-left: 5px;
+    border: 2px solid lightgray;
+    border-radius: 0px 10px 10px 0px;
+}
+/* Input Modal Cpf*/
+.hover_cpf input, .hover_modal_cpf input{
+    color: rgb(131, 131, 131);
+    border: 2px solid lightgray;
+    border-radius: 0;
+    height: auto;
+}
+
+.container_cpf_ballon{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+}
+
+/*-------------- HOVER MODAL BAG --------------------*/
+.hover_bag{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    background-color: #fff;
+    width: 300px;
+    height: 100px;
+    border-radius: 20px;
+    box-shadow: 0 -3px 5px #b1b1b1bb;
+    justify-content: space-between;
+    transition: height 1s ,opacity 200ms;
+    z-index: 1;
+}
+.hover_bag_none{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    background-color: #fff;
+    border-radius: 20px;
+    opacity: 0;
+    overflow: hidden;
+    height: 0;
+    width: 0;
+    transition: overflow 1s, height 1s, opacity 1s, width 5s;
+}
+.hover_bag::before{
+    content: "";
+
+	width: 0;
+	height: 0;
+
+	position: absolute;
+
+	border-left: 20px solid transparent;
+	border-right: 20px solid transparent;
+	border-bottom: 20px solid #fff;
+	
+	top: -20px;
+	right: 13%;
+}
+.container_bag_ballon{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+.container_bag_ballon p{
+    opacity: 0.8;
+}
+
+
+.pointer{
+    cursor: pointer;
+}
+
+
+.info_container{
+    z-index: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.info_container i{
+    color: rgb(79, 136, 138);
+    font-size: 40px;
+    margin-right: 8px;
+    
+}
+.info_container p{
+    color: rgb(79, 136, 138);
+    width: 50%;
+    font-weight: bold;
+}
+
+.hover_top{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 30px;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.hover_bottom{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 60px;
+    overflow: hidden;
+    
+}
+.hover_bottom a{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(238, 238, 238);
+    border-radius: 0 0 20px 20px;
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.hover_bottom a:hover{
+    color: #0658b1;
+}
+
+@media screen and (max-width: 990px){
+    .hover_modal::before{
+        top: -20px;
+        right: 12%;
+    }
+    .hover_cpf{
+        right: 20px;
+    }
+    .hover_modal_cpf{
+        right: 20px;
+    }
+    .hover_cpf::before{
+        top: -20px;
+        right: 18%;
+    }
+    
+    .hover_bag{
+        right: 2%;
+    }
+    .hover_bag_none{
+        right: 2%;
+    }
+    .hover_bag::before{
+        right: 8%;
+    }
+    
+}

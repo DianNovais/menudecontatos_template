@@ -1,0 +1,17 @@
+:root{
+    --main-color: #145efd;
+    --light: #f8f9fa;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Roboto, sans-serif;
+    overflow-x: hidden;
+}
+
